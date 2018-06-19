@@ -54,7 +54,9 @@
     "disc": "npm run transpile && browserify dist/lib/index.js --full-paths | uglifyjs --compress --mangle | discify --open --full-paths",
     "preversion": "npm run lint && npm run test",
     "dev": "watch 'npm run test:fast' src/ test/",
-    "dev:example": "watch 'npm run transpile:src && echo \"done\"' src/ test/"
+    "dev:example": "watch 'npm run transpile:src && echo \"done\"' src/ test/",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "pre-commit": [
     "lint"
@@ -82,7 +84,9 @@
     "random-token": "0.0.8",
     "spark-md5": "^3.0.0",
     "unload": "1.3.6",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "pouchdb-adapter-http": "6.4.2",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "@babel/types": "7.0.0-beta.44",
@@ -176,5 +180,6 @@
     "ignore": [
       "babel-eslint"
     ]
-  }
+  },
+  "snyk": true
 }
