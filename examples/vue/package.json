@@ -21,7 +21,7 @@
     "pouchdb-adapter-idb": "6.4.1",
     "pouchdb-server": "2.3.7",
     "random-int": "1.0.0",
-    "vue": "2.5.13"
+    "vue": "2.5.17"
   },
   "devDependencies": {
     "async-test-util": "1.2.1",
