@@ -12,7 +12,7 @@
     "babel-polyfill": "6.26.0",
     "babel-runtime": "6.26.0",
     "concurrently": "3.5.1",
-    "electron": "1.8.4",
+    "electron": "1.8.8",
     "electron-tabs": "0.9.1",
     "electron-window-manager": "1.0.6",
     "melanke-watchjs": "1.4.3",
