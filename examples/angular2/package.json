@@ -45,7 +45,7 @@
     "normalize.css": "7.0.0",
     "pouchdb-adapter-http": "6.4.3",
     "pouchdb-adapter-idb": "6.4.3",
-    "pouchdb-server": "2.3.7",
+    "pouchdb-server": "4.0.1",
     "random-int": "1.0.0",
     "regenerator": "0.11.0",
     "roboto-npm-webfont": "1.0.1",
