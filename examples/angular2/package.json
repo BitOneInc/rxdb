@@ -19,7 +19,9 @@
     "build": "npm run build:clean && npm run build:webpack && npm run build:copy && echo \"BUILD SUCCESS\"",
     "docker": "docker run -it -v $(pwd):/app -p 0.0.0.0:8888:8888 -p 0.0.0.0:10101:10101 node:6.9.1 /bin/bash /app/entrypoint.bash",
     "test:run": "testcafe chromium test/",
-    "test:build": "concurrently \"npm run build:serve\" \"npm run test:run\" --kill-others --success first"
+    "test:build": "concurrently \"npm run build:serve\" \"npm run test:run\" --kill-others --success first",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "pubkey",
   "license": "MIT",
@@ -45,13 +47,14 @@
     "normalize.css": "7.0.0",
     "pouchdb-adapter-http": "6.4.3",
     "pouchdb-adapter-idb": "6.4.3",
-    "pouchdb-server": "2.3.7",
+    "pouchdb-server": "4.0.1",
     "random-int": "1.0.0",
     "regenerator": "0.11.0",
     "roboto-npm-webfont": "1.0.1",
     "rxdb": "../../",
     "rxjs": "5.5.5",
-    "zone.js": "0.8.18"
+    "zone.js": "0.8.18",
+    "snyk": "^1.143.5"
   },
   "devDependencies": {
     "@types/chai": "4.0.4",
@@ -89,5 +92,6 @@
     "webpack-dev-middleware": "1.12.0",
     "webpack-dev-server": "2.9.4",
     "webpack-merge": "4.1.1"
-  }
+  },
+  "snyk": true
 }
