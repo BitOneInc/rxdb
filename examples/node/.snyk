@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2019-03-30T08:38:01.970Z'
+    - pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-03-30T08:38:01.970Z'
+    - pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-03-30T08:38:01.970Z'
+    - pouchdb-adapter-node-websql > websql > sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-03-30T08:38:01.970Z'
