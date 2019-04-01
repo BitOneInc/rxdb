@@ -13,15 +13,18 @@
     "postbuild": "cp src/index.html ./dist/index.html && cp test/multitab.html ./dist/multitab.html",
     "build:serve": "ws -p 8888 -d dist/",
     "test:run": "testcafe chromium test/",
-    "test": "concurrently \"npm run build:serve \" \"npm run test:run\" --kill-others --success first"
+    "test": "concurrently \"npm run build:serve \" \"npm run test:run\" --kill-others --success first",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "concurrently": "3.5.1",
-    "pouchdb-adapter-http": "6.4.1",
+    "pouchdb-adapter-http": "6.4.2",
     "pouchdb-adapter-idb": "6.4.1",
-    "pouchdb-server": "2.3.7",
+    "pouchdb-server": "4.0.1",
     "random-int": "1.0.0",
-    "vue": "2.5.13"
+    "vue": "2.5.17",
+    "snyk": "^1.144.0"
   },
   "devDependencies": {
     "async-test-util": "1.2.1",
@@ -41,5 +44,6 @@
     "vue-template-compiler": "2.5.13",
     "webpack": "3.10.0",
     "webpack-dev-server": "2.11.0"
-  }
+  },
+  "snyk": true
 }
