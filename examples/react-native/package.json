@@ -16,7 +16,9 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --forceExit"
+    "test": "node node_modules/jest/bin/jest.js --forceExit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "jest": {
     "preset": "jest-expo",
@@ -28,12 +30,14 @@
     "expo": "23.0.4",
     "fbjs": "0.8.16",
     "pouchdb-adapter-asyncstorage": "6.4.0",
-    "pouchdb-adapter-http": "6.4.1",
+    "pouchdb-adapter-http": "6.4.2",
     "random-token": "0.0.8",
     "react": "16.0.0",
-    "react-native": "0.50.3",
+    "react-native": "0.59.0",
     "rxdb": "../../",
     "rxjs": "5.5.6",
-    "util": "0.10.3"
-  }
+    "util": "0.10.3",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
