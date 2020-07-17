@@ -19,7 +19,7 @@
     "concurrently": "3.5.1",
     "pouchdb-adapter-http": "6.4.1",
     "pouchdb-adapter-idb": "6.4.1",
-    "pouchdb-server": "2.3.7",
+    "pouchdb-server": "4.2.0",
     "random-int": "1.0.0",
     "vue": "2.5.13"
   },
