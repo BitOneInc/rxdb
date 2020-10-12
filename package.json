@@ -74,7 +74,7 @@
     "is-electron": "2.1.0",
     "is-my-json-valid": "2.17.2",
     "modifyjs": "0.3.1",
-    "object-path": "0.11.4",
+    "object-path": "0.11.5",
     "pouchdb-core": "6.4.3",
     "pouchdb-find": "6.4.3",
     "pouchdb-replication": "6.4.3",
