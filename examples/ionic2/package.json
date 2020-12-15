@@ -36,7 +36,7 @@
     "pouchdb-replication": "^6.2.0",
     "pouchdb-server": "^2.3.6",
     "random-token": "0.0.8",
-    "rxdb": "^5.1.0",
+    "rxdb": "^9.11.0",
     "rxjs": "^5.4.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "^0.8.13"
