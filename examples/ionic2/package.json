@@ -11,7 +11,9 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "server": "pouchdb-server --host 0.0.0.0 -p 10101 -m -d /tmp/pouchdb-server/ -n true"
+    "server": "pouchdb-server --host 0.0.0.0 -p 10101 -m -d /tmp/pouchdb-server/ -n true",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@angular/common": "^4.3.0",
@@ -29,17 +31,18 @@
     "crypto-js": "^3.1.9-1",
     "ionic-angular": "^3.5.3",
     "ionicons": "3.0.0",
-    "pouchdb-adapter-http": "^6.2.0",
+    "pouchdb-adapter-http": "^7.0.0",
     "pouchdb-adapter-idb": "^6.2.0",
     "pouchdb-adapter-localstorage": "^6.2.0",
     "pouchdb-adapter-websql": "^6.2.0",
     "pouchdb-replication": "^6.2.0",
-    "pouchdb-server": "^2.3.6",
+    "pouchdb-server": "^4.2.0",
     "random-token": "0.0.8",
-    "rxdb": "^5.1.0",
+    "rxdb": "^7.3.2",
     "rxjs": "^5.4.2",
     "sw-toolbox": "3.6.0",
-    "zone.js": "^0.8.13"
+    "zone.js": "^0.8.13",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@ionic/app-scripts": "^2.0.2",
@@ -48,5 +51,6 @@
     "concurrently": "^3.4.0",
     "typescript": "^2.4.1"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "snyk": true
 }
