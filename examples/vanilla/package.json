@@ -16,10 +16,10 @@
     "concurrently": "^3.5.0",
     "local-web-server": "2.2.1",
     "normalize.css": "7.0.0",
-    "pouchdb-adapter-http": "^6.3.4",
+    "pouchdb-adapter-http": "^7.0.0",
     "pouchdb-adapter-localstorage": "^6.3.4",
     "pouchdb-replication": "^6.3.4",
-    "pouchdb-server": "^2.3.7"
+    "pouchdb-server": "^4.2.0"
   },
   "devDependencies": {
     "ncp": "2.0.0",
