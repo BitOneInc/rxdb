@@ -4,10 +4,10 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "concurrently": "^3.3.0",
-    "pouchdb-adapter-http": "^6.1.2",
+    "pouchdb-adapter-http": "^7.0.0",
     "pouchdb-adapter-idb": "^6.1.2",
     "pouchdb-replication": "^6.1.2",
-    "pouchdb-server": "^2.3.4",
+    "pouchdb-server": "^4.2.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "rxjs": "^5.2.0"
